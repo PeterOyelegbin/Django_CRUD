@@ -17,29 +17,32 @@
 
 ## Now for the views. 
 In blog/views.py,  create a new view/class PostListView, which inherits django’s generic ListView,  it’s config/attributes should be:
-```model = Post
-
+```
+model = Post
 ```
 
 * Create another view, PostCreateView, which inherits django’s generic CreateView, with attributes:
-```model = Post
+```
+model = Post
 fields = “__all__”
 success_url  = reverse_lazy(“blog:all”)
 ```
 
 * Create another view, PostDetailView, which inherits django’s generic DetailView, with attributes:
-```model = Post
-
+```
+model = Post
 ```
 
 * Create another view PostUpdateView, which inherits django’s generic UpdateView, with attributes:
-```model = Post
+```
+model = Post
 fields = “__all__”
 success_url  = reverse_lazy(“blog:all”)
 ```
 
 * Create another view PostDeleteView, which inherits django’s generic UpdateView, with attributes:
-```model = Post
+```
+model = Post
 fields = “__all__”
 success_url  = reverse_lazy(“blog:all”)
 ```
